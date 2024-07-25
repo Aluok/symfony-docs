@@ -2812,6 +2812,9 @@ paths
 This option allows to define an array of paths with files or directories where
 the component will look for additional validation files:
 
+.. caution::
+    When defining a directory, all validation files will be searched recursively. Therefore, defining a root directory and a subdirectory of this root directory will result in a constraint being validated multiple times.
+
 .. configuration-block::
 
     .. code-block:: yaml
